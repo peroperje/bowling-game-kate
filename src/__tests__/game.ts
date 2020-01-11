@@ -1,7 +1,9 @@
 import createGame, { Game } from "../game";
 
 describe("Game", () => {
+
   let game = {} as Game;
+
   const rollsMany = (n: number, pins: number) => {
     for (let i = 0; i < n; i++) {
       game.roll(pins);
@@ -24,11 +26,11 @@ describe("Game", () => {
     rollsMany(20, 0);
     expect(game.score()).toBe(0);
   });
+
   it("All Ones", () => {
     rollsMany(20, 1);
     expect(game.score()).toBe(20);
   });
-
 
   it("One Spare", () => {
     rollSpare();
