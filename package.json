@@ -2,7 +2,7 @@
   "name": "bowling-game-kate",
   "version": "1.0.0",
   "description": "Bowling game test kate written in typescript",
-  "main": "index.ts",
+  "main": "game.ts",
   "author": "peroperje",
   "license": "MIT",
   "devDependencies": {

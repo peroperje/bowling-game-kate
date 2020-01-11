@@ -46,4 +46,9 @@ describe("Game", () => {
     rollsMany(16, 0);
     expect(game.score()).toBe(24);
   });
+
+  it('Perfect Game', () => {
+    rollsMany(12,10)
+    expect(game.score()).toBe(300);
+  });
 });
